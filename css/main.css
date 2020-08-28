@@ -1,0 +1,28 @@
+.navbar-brand {
+    color: black;
+    font-family: 'Lexend Peta', sans-serif;
+    font-size: 30px;
+}
+
+.navbar-brand:hover {
+    color: grey;
+}
+
+#title {
+    text-align: center;
+    margin: auto;
+    float: right;
+}
+
+.nav-link {
+    color: #575757;
+    font-family: 'Crimson Text', sans-serif;
+}
+
+.nav-link:hover {
+    color: #a9a9a9;
+}
+
+.body {
+    background-color: black
+}
