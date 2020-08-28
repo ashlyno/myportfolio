@@ -12,8 +12,7 @@
         <link rel="stylesheet" href="css/main.css"/>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lexend+Peta&family=Martel:wght@200&display=swap" rel="stylesheet">
 
         <!-- Angular -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -24,19 +23,19 @@
 
     <body>
 
-        <nav class="navbar navbar-expand-md sticky-top">
+        <nav class="navbar navbar-expand-md sticky-top" id='header'>
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#!artwork">Artwork</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Data Visualization</a>
+                        <a class="nav-link" href="#">Visualizations</a>
                     </li>
                 </ul>
             </div>
             <div class="mx-auto">
-                <a class="navbar-brand mx-auto" href="#!home" >Ashlyn Rose</a>
+                <a class="navbar-brand mx-auto" href="#!home" >ASHLYN ROSE</a>
             </div>
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
@@ -50,9 +49,15 @@
             </div>
         </nav>
 
-        <main>
+        <main id="test">
             <ng-view></ng-view>
         </main>
+
+        <nav class="navbar navbar-expand-md sticky-bottom" id='footer'>
+            <div class="mx-auto">
+                <a class="navbar-brand mx-auto" id='footer_text'>BY ASHES TO ASHLYN ROSE</a>
+            </div>
+        </nav>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

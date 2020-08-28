@@ -8,6 +8,7 @@
     color: grey;
 }
 
+
 #title {
     text-align: center;
     margin: auto;
@@ -16,11 +17,16 @@
 
 .nav-link {
     color: #575757;
-    font-family: 'Crimson Text', sans-serif;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
 }
 
 .nav-link:hover {
     color: #a9a9a9;
+}
+
+.nav-link:active {
+    border-bottom: 3px solid black;
 }
 
 .navbar {
@@ -30,3 +36,63 @@
 .container {
     padding: 10px
 }
+
+#header {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    background-color: #fff;
+}
+
+#footer {
+    padding: 10px;
+    border-top: 1px solid #333;
+    background-color: #fff;
+}
+
+#footer_text {
+    font-size: 14px;
+    color: black;
+}
+
+h5 {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Martel', serif;
+    color: #a9a9a9
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 10px;
+  }
+  
+  .column img {
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

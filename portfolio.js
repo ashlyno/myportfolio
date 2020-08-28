@@ -5,7 +5,8 @@ var app = angular.module("PortfolioApp", ["ngRoute"]);
             templateUrl : "partials/home.html"
         })
         .when("/artwork", {
-            templateUrl : "partials/artwork.html"
+            templateUrl : "partials/artwork.html",
+            controller: "artworkCtrl"
         })
         .otherwise({
             templateUrl : "partials/home.html"
