@@ -23,6 +23,10 @@
     color: #a9a9a9;
 }
 
-.body {
-    background-color: black
+.navbar {
+    background: white;
+}
+
+.container {
+    padding: 10px
 }
