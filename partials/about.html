@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div id="about_img_container">
+                <img src="{{ url_for('static', filename='images/me.jpeg') }}" alt="Responsive image" id="about_img">
+            </div>
+        </div>
+        <div class="col my-auto">
+            <h2>Nice to meet you too.</h2>
+            <h5>My name is Ashlyn and I'm a Seattle based, ex-rodeo queen, turned data analyst with a passion for creating.</h5>
+        </div>
+    </div>
+</div>
+{% endblock %}

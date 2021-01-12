@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div id="contactForm">
+    <div class="row" id="contactRow">
+        <div class="col my-auto">
+            <h2>Contact Me.</h2>
+            <h5>Send me an email & let's chat.</h5>
+        </div>
+        <div class="col my-auto">
+            {% if success %}
+            
+                <h3>Thank you for your message. We'll get back to you shortly.</h3>
+
+            {% else %}
+                <form action="{{ url_for('contact') }}" method=post>
+                    <div class="form-row">
+                        <div class="form-group">
+                            {{ form.name (placeholder='Name',class_="form-control") }}
+                        </div>
+                        <div class="form-group">
+                            {{ form.email (placeholder='Email',class_="form-control") }}
+                        </div> 
+                        <div class="form-group">
+                            {{ form.subject (placeholder='Subject',class_="form-control") }}
+                        </div>
+                        <div class="form-group">
+                            {{ form.message (placeholder='Message',class_="form-control") }}
+                        </div>
+                        <div class="col offset-md-11">
+                            {{ form.submit (class_="input_submit") }}
+                        </div>
+                    </div>
+                </form>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

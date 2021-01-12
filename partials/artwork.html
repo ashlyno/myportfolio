@@ -1,16 +1,63 @@
-<div class="container">
-    <div class="row">
-        <div class="column">
-            <div id="img_container"><img src="images/gurl.jpg" id="img"></div>
-            <div id="img_container"><img src="images/daisy_sketch.jpg" id="img"></div>
-            <div id="img_container"><img src="images/leaves.jpg" id="img"></div>
-            <div id="img_container"><img src="images/thinking.jpg" id="img"></div>
+{% extends "index.html" %}
+
+{% block content %}
+<div class="artwork-panel">
+    <div class="artwork-row">
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/fishgirl.jpeg') }}" class="img_fluid">
         </div>
-        <div class="column">
-            <div id="img_container"><img src="images/iguana.jpg" id="img"></div>
-            <div id="img_container"><img src="images/gofuckyourself.jpg" id="img"></div>
-            <div id="img_container"><img src="images/welcome_img_cropped.jpeg" id="img"></div>
-            <div id="img_container"><img src="images/viper.jpg" id="img"></div>
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/kitten.jpeg') }}" class="img_fluid">
+        </div>
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/gofuckyourself.JPG') }}" class="img_fluid">
+        </div>
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/tongue.jpeg') }}" class="img_fluid">
+        </div>
+    </div>
+    <div class="artwork-row">
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/hamster.jpeg') }}" class="img_fluid">
+        </div>
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/deer.jpeg') }}" class="img_fluid">
+        </div>
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/daisy_sketch.JPG') }}" class="img_fluid">
+        </div>
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/iguana.JPG') }}" class="img_fluid">
+        </div>
+    </div>
+    <div class="artwork-row">
+        
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/thinking.JPG') }}" class="img_fluid">
+        </div>
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/spooky.jpeg') }}" class="img_fluid">
+        </div>
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/viper.JPG') }}" class="img_fluid">
+        </div>
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/welcome_image.jpg') }}" class="img_fluid">
+        </div>
+    </div>
+    <div class="artwork-row">
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/gurl.jpg') }}" class="img_fluid">
+        </div>
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/scream.jpeg') }}" class="img_fluid">
+        </div>
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/horse.jpeg') }}" class="img_fluid">
+        </div>
+        <div class="artwork-col">
+            <img src="{{ url_for('static', filename='images/leaves.JPG') }}" class="img_fluid">
         </div>
     </div>
 </div>
+{% endblock %}

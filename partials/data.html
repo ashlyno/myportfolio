@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div id="data_page">
+    <div class="row" id="viz_row">
+        <div class="col-4 my-auto">
+            <h2>Business Scorecard</h2>
+            <h3>A data visualization to signal to the leadership team, at a glance, how the business is performing.</h3>
+        </div>
+        <div class="col-8">
+            <div id="img_container">
+                <img src="{{ url_for('static', filename='vizzes/scorecard_jpg.jpeg') }}" class="img-fluid" alt="Responsive image" id="img">
+            </div>
+        </div>
+    </div>
+    <div class="row" id="viz_row">
+        <div class="col-4 my-auto">
+            <h2>Customer Success Monitor</h2>
+            <h3>A data visualization to signal to the customer success manager the health of customer product usage.</h3>
+        </div>
+        <div class="col-8">
+            <div id="img_container">
+                <img src="{{ url_for('static', filename='vizzes/cust_performance_image.png') }}" class="img-fluid" alt="Responsive image" id="img">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

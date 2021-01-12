@@ -1,0 +1,178 @@
+/* Universal */
+
+html,body {
+  opacity: .9;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 28px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h3 {
+  font-size: 17px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
+
+h5,input,textarea {
+  font-size: 17px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Header */
+
+#header {
+  padding: 2px;
+  border-bottom: 1px solid rgb(189, 189, 189);
+  background-color: #fff;
+}
+
+.navbar-brand {
+    color: black;
+    font-family: 'Prata', sans-serif;
+    font-size: 35px;
+}
+
+.navbar-brand:hover {
+    color: grey;
+}
+
+.nav-link {
+    color: #333333;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+}
+
+.nav-link:hover {
+    color: #a9a9a9;
+}
+
+.nav-link:active {
+    border-bottom: 3px solid black;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+/* Main */
+
+/* Footer */
+
+#footer {
+    padding: 1px;
+    border-top: 1px solid #333;
+    background-color: white;
+}
+
+#footer_text {
+    font-size: 14px;
+    color:black;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Artwork */
+
+.artwork-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.artwork-col {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 10px;
+}
+
+.artwork-col img {
+  margin-top: 20px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* About */
+
+#about_img {
+  padding: 25px;
+  max-width: 95%;
+}
+
+.img_fluid:hover {
+  opacity: .7;
+  transition-timing-function: ease-in;
+}
+
+
+.data-page {
+  width: 100%;
+}
+
+/* Vizzes */
+
+#viz_row {
+  padding: 50px;
+  height: 100%;
+}
+
+#contactForm {
+  width: 100%;
+  height: 85vh;
+}
+
+#contactRow {
+  height:100%;
+  padding: 50px;
+}
+
+form {
+  height:100%;
+}
+
+.form-row {
+  height: 100%;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.input_submit {
+  background-color: transparent;
+  border: transparent;
+  font-size: 20px;
+  font-family: 'Cormorant Garamond', serif;
+  padding-right: 20px;
+}
+
+.input_submit:hover {
+  opacity: .7;
+  transition-timing-function: ease-in;
+}
+
+
+/*
+ Artwork 
+  
+ Responsive layout - makes a two column-layout instead of four columns 
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+*/

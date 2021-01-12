@@ -1,6 +1,9 @@
 <!doctype html>
+
 <html lang="en" ng-app="PortfolioApp" class="ng-scope">
+
     <head>
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,22 +12,26 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
 
         <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lexend+Peta&family=Martel:wght@200&Cormorant+Garamond:wght@300&family=Prata&display=swap" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
+
         <!-- Angular -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 
         <!-- FavIcon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-        <link rel="manifest" href="/images/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ url_for('static', filename='images/site.webmanifest') }}">
 
         <title>ashlynroseopgrande.com</title>
+
     </head>
 
     <body>
@@ -33,37 +40,30 @@
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <h5>&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+                        <a class="nav-link" href="{{ url_for('artwork') }}">Artwork</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#!artwork">Art</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Visualization</a>
+                        <a class="nav-link" href="{{ url_for('data') }}">Data Visualization</a>
                     </li>
                 </ul>
             </div>
             <div class="mx-auto">
-                <a class="navbar-brand mx-auto" href="#!home">A S H L Y N &nbsp; R O S E &nbsp; O P G R A N D E</a>
+                <a class="navbar-brand mx-auto" href="{{ url_for('index') }}">A S H L Y N &nbsp; R O S E &nbsp; O P G R A N D E</a>
             </div>
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="{{ url_for('about') }}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <h5>&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+                        <a class="nav-link" href="{{ url_for('contact') }}">Hire Me</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <main id="test">
-            <ng-view></ng-view>
-        </main>
+        {% block content %}
+        {% endblock %}
 
         <nav class="navbar navbar-expand-md sticky-bottom" id='footer'>
             <div class="mx-auto">
@@ -77,7 +77,8 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-        <script src="portfolio.js"></script>
+        <script src="app/portfolio.js"></script>
 
     </body>
+
 </html>
