@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div id="design_page">
+    <div class="row" id="design_row">
+        <div class="col-4 my-auto">
+            <h2>Black Lives Matter Tee</h2>
+            <h5>Custom shirt design that helped raise over $3,000 for the ACLU in 2020.</h5>
+        </div>
+        <div class="col-8">
+            <div id="img_container" class="design_col">
+                <img src="{{ url_for('static', filename='images/blm_logo_crop.jpeg') }}" class="img-fluid" alt="Responsive image" id="img">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -43,7 +43,10 @@
                         <a class="nav-link" href="{{ url_for('artwork') }}">Artwork</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('data') }}">Data Visualization</a>
+                        <a class="nav-link" href="{{ url_for('design') }}">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('data') }}">Analytics</a>
                     </li>
                 </ul>
             </div>
@@ -56,7 +59,7 @@
                         <a class="nav-link" href="{{ url_for('about') }}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('contact') }}">Hire Me</a>
+                        <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +70,18 @@
 
         <nav class="navbar navbar-expand-md sticky-bottom" id='footer'>
             <div class="mx-auto">
-                <a class="navbar-brand mx-auto" id='footer_text'>Built and designed by Ashlyn Opgrande</a>
+                <a href="https://www.linkedin.com/in/ashlyn-opgrande/" class="navbar-brand mx-auto" id="footer_links">
+                    <img src="{{ url_for('static', filename='images/linkedin.png') }}" width="25" height="25" alt="">
+                </a>
+                <a href="https://www.instagram.com/ashes_to_ashlynrose_art/" class="navbar-brand mx-auto" id="footer_links">
+                    <img src="{{ url_for('static', filename='images/instagram.png') }}" width="25" height="25" alt="">
+                </a>
+                <a href="https://github.com/ashlyno" class="navbar-brand mx-auto" id="footer_links">
+                    <img src="{{ url_for('static', filename='images/tableau_icon.png') }}" width="25" height="25" alt="">
+                </a>
+                <a href="https://public.tableau.com/profile/ashlyn.opgrande#!/" class="navbar-brand mx-auto" id="footer_links">
+                    <img src="{{ url_for('static', filename='images/GitHub-Mark-32px.png') }}" width="25" height="25" alt="">
+                </a>
             </div>
         </nav>
 

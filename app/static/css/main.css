@@ -58,8 +58,6 @@ h5,input,textarea {
   padding: 10px;
 }
 
-/* Main */
-
 /* Footer */
 
 #footer {
@@ -68,10 +66,8 @@ h5,input,textarea {
     background-color: white;
 }
 
-#footer_text {
-    font-size: 14px;
-    color:black;
-    font-family: 'Cormorant Garamond', serif;
+#footer_links {
+    padding: 5px;
 }
 
 /* Artwork */
@@ -109,17 +105,30 @@ h5,input,textarea {
   transition-timing-function: ease-in;
 }
 
+/* Vizzes */
 
-.data-page {
+
+#data-page {
   width: 100%;
 }
-
-/* Vizzes */
 
 #viz_row {
   padding: 50px;
   height: 100%;
 }
+
+/* Design */
+
+#design_page {
+  width: 100%;
+}
+
+#design_row {
+  padding: 50px;
+  height: 100%;
+}
+
+/* Contact */
 
 #contactForm {
   width: 100%;
@@ -155,24 +164,3 @@ form {
   opacity: .7;
   transition-timing-function: ease-in;
 }
-
-
-/*
- Artwork 
-  
- Responsive layout - makes a two column-layout instead of four columns 
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  Responsive layout - makes the two columns stack on top of each other instead of next to each other 
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-*/

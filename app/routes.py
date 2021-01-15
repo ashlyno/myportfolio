@@ -28,6 +28,10 @@ def artwork():
 def data():
     return render_template('data.html')
 
+@app.route('/design')
+def design():
+    return render_template('design.html')
+
 @app.route('/about')
 def about():
     return render_template('about.html')
