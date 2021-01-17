@@ -1,8 +1,33 @@
 /* Universal */
 
 html,body {
+  height: 100%;
   width: 100%;
-  scroll-behavior: smooth;
+}
+
+.container-fluid {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.row {
+  min-height: 100%;
+  overflow-y: scroll;
+  padding: 25px;
+}
+
+.container {
+  height: 100%;
+}
+
+#about-img {
+  padding: 25px;
+}
+
+.img-fluid:hover {
+  opacity: .7;
+  transition-timing-function: ease-in;
 }
 
 h2 {
@@ -27,6 +52,7 @@ h5,input,textarea {
   padding: 2px;
   border-bottom: 1px solid rgb(189, 189, 189);
   background-color: #fff;
+  margin: 0;
 }
 
 .navbar-brand {
@@ -92,51 +118,21 @@ h5,input,textarea {
   width: 100%;
 }
 
-/* About */
+/* Mobile Artwork */
 
-#about_img {
-  padding: 25px;
-  max-width: 95%;
-}
-
-.img_fluid:hover {
-  opacity: .7;
-  transition-timing-function: ease-in;
-}
-
-/* Vizzes */
-
-
-#data-page {
-  width: 100%;
-}
-
-#viz_row {
-  padding: 50px;
-  height: 100%;
-}
-
-/* Design */
-
-#design_page {
-  width: 100%;
-}
-
-#design_row {
-  padding: 50px;
-  height: 100%;
+@media screen and (max-width: 48em){
+  .artwork-col {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
 }
 
 /* Contact */
 
-#contactForm {
+.contactForm {
   width: 100%;
   height: 85vh;
-}
-
-#contactRow {
-  height:100%;
-  padding: 50px;
 }
 
 form {
@@ -162,4 +158,12 @@ form {
 .input_submit:hover {
   opacity: .7;
   transition-timing-function: ease-in;
+}
+
+/* Mobile Universal */
+
+@media screen and (max-width: 48em){
+  #center {
+      text-align: center;
+  }
 }
