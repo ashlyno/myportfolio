@@ -46,6 +46,11 @@ h5,input,textarea {
   font-family: 'Cormorant Garamond', serif;
 }
 
+h6 {
+  font-size: 15px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
 /* Header */
 
 #header {
